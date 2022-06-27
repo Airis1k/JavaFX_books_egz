@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_books.controller.LoginController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="368.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <Label layoutX="248.0" layoutY="36.0" text="Bookstore">
+               <font>
+                  <Font name="Corbel Light" size="26.0" />
+               </font></Label>
+            <Label layoutX="69.0" layoutY="112.0" text="Username:">
+               <font>
+                  <Font name="Corbel Light" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="177.0" text="Password:">
+               <font>
+                  <Font name="Corbel Light" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" layoutX="181.0" layoutY="173.0" prefHeight="30.0" prefWidth="240.0" />
+            <TextField fx:id="usernameField" layoutX="181.0" layoutY="108.0" prefHeight="30.0" prefWidth="240.0" />
+            <Button layoutX="181.0" layoutY="276.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #696969;" text="Login">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </Button>
+            <Button layoutX="331.0" layoutY="276.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #696969;" text="Register" />
+            <Label fx:id="errorLabel" layoutX="71.0" layoutY="237.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

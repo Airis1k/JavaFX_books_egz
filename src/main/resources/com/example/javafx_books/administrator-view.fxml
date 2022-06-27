@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_books.controller.AdministratorController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <Pane layoutX="14.0" layoutY="63.0" prefHeight="330.0" prefWidth="895.0">
+               <children>
+                  <TableView fx:id="tableView" layoutX="-6.0" layoutY="-7.0" prefHeight="344.0" prefWidth="907.0">
+                    <columns>
+                      <TableColumn fx:id="idColumn" prefWidth="46.20001411437988" text="ID" />
+                      <TableColumn fx:id="nameColumn" prefWidth="178.79998016357422" text="Name" />
+                        <TableColumn fx:id="summaryColumn" minWidth="0.0" prefWidth="328.0000305175781" text="Summary" />
+                        <TableColumn fx:id="isbnColumn" minWidth="0.0" prefWidth="171.20001220703125" text="ISBN" />
+                        <TableColumn fx:id="pageCountColumn" minWidth="0.0" prefWidth="68.800048828125" text="Page count" />
+                        <TableColumn fx:id="categoryColumn" prefWidth="127.5999755859375" text="Category" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="409.0" prefHeight="54.0" prefWidth="907.0">
+               <children>
+                  <Button layoutX="35.0" layoutY="12.0" mnemonicParsing="false" onAction="#onEditButtonClick" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #696969;" text="EDIT" />
+                  <Button layoutX="207.0" layoutY="12.0" mnemonicParsing="false" onAction="#onSearchButtonClick" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #696969;" text="SEARCH" />
+               </children>
+            </Pane>
+            <Label layoutX="379.0" layoutY="14.0" text="BOOKS LIBRARY">
+               <font>
+                  <Font name="Corbel Light" size="24.0" />
+               </font>
+            </Label>
+         </children>
+        </Pane>
+    </children>
+</GridPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_books.controller.RegisterController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="440.0" prefWidth="632.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <Label layoutX="257.0" layoutY="39.0" text="Register">
+               <font>
+                  <Font name="Corbel Light" size="26.0" />
+               </font></Label>
+            <Label layoutX="89.0" layoutY="106.0" text="Username:">
+               <font>
+                  <Font name="Corbel Light" size="18.0" />
+               </font></Label>
+            <Label layoutX="91.0" layoutY="145.0" text="Password:">
+               <font>
+                  <Font name="Corbel Light" size="18.0" />
+               </font></Label>
+            <Label layoutX="28.0" layoutY="189.0" text="Confirm password:">
+               <font>
+                  <Font name="Corbel Light" size="18.0" />
+               </font></Label>
+            <Label layoutX="119.0" layoutY="236.0" text="Email:">
+               <font>
+                  <Font name="Corbel Light" size="18.0" />
+               </font></Label>
+            <PasswordField fx:id="passwordField" layoutX="199.0" layoutY="141.0" prefHeight="30.0" prefWidth="240.0" />
+            <PasswordField fx:id="confirmPassField" layoutX="199.0" layoutY="185.0" prefHeight="30.0" prefWidth="240.0" />
+            <TextField fx:id="usernameField" layoutX="199.0" layoutY="102.0" prefHeight="30.0" prefWidth="240.0" />
+            <TextField fx:id="emailField" layoutX="199.0" layoutY="232.0" prefHeight="30.0" prefWidth="240.0" />
+            <CheckBox fx:id="isAdmin" layoutX="199.0" layoutY="277.0" mnemonicParsing="false" text="Administrator">
+               <font>
+                  <Font name="Corbel Light" size="18.0" />
+               </font></CheckBox>
+            <Button layoutX="349.0" layoutY="347.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #696969;" text="Register" />
+            <Label fx:id="errorLabel" layoutX="90.0" layoutY="322.0" textFill="#ff2424" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
